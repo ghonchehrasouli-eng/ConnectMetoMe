@@ -123,31 +123,31 @@ body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
 .band p+p{margin-top:10px}
 
 /* ── ROADMAP / NAV CARDS ── */
-.rm{background:#1C3248;border:1px solid rgba(234,211,200,.22);
+.rm{background:#c9c0c0;border:none;
   border-radius:16px;padding:18px 16px;margin-bottom:10px;
   cursor:pointer;transition:all .26s}
-.rm:hover{background:#243A4E;transform:translateX(3px);border-color:rgba(234,211,200,.4)}
-.rm-title{font-size:20px;font-weight:600;color:#EAD3C8;
-  margin-bottom:4px;font-family:'Playfair Display',serif}
-.rm-sub{font-size:14px;color:#BDC7C9;line-height:1.5}
+.rm:hover{background:#bbb0b0;transform:translateX(3px)}
+.rm-title{font-size:20px;font-weight:600;color:#000;
+  margin-bottom:4px;font-family:'Jost',sans-serif}
+.rm-sub{font-size:14px;color:#333;line-height:1.5}
 
 /* ── PRACTICE CARDS (icon right) ── */
-.pc{background:#1C3248;border:1px solid rgba(234,211,200,.22);
+.pc{background:#c9c0c0;border:none;
   border-radius:16px;padding:16px 20px;margin-bottom:10px;
   cursor:pointer;transition:all .26s;
   display:flex;align-items:center;justify-content:space-between}
-.pc:hover{background:#243A4E;transform:translateX(3px);border-color:rgba(234,211,200,.4)}
-.pc-title{font-size:18px;font-weight:600;color:#EAD3C8;
-  font-family:'Playfair Display',serif}
+.pc:hover{background:#bbb0b0;transform:translateX(3px)}
+.pc-title{font-size:18px;font-weight:600;color:#000;
+  font-family:'Jost',sans-serif}
 .pc-icon{width:56px;height:56px;object-fit:contain;flex-shrink:0;margin-left:12px}
 
 /* ── BUTTONS (sub-nav within screen) ── */
 .btn-row{display:flex;gap:10px;margin-top:14px}
 .btn-sub{flex:1;padding:14px 10px;border-radius:14px;text-align:center;
-  background:#1C3248;border:1px solid rgba(234,211,200,.22);
-  color:#EAD3C8;font-size:14px;font-weight:600;cursor:pointer;
+  background:#c9c0c0;border:none;
+  color:#000;font-size:14px;font-weight:600;cursor:pointer;
   transition:all .24s;line-height:1.4;font-family:'Jost',sans-serif}
-.btn-sub:hover{background:#243A4E;border-color:rgba(234,211,200,.4)}
+.btn-sub:hover{background:#bbb0b0}
 
 /* ── CHECKLIST ── */
 .ckl{list-style:none;margin-top:6px}
@@ -283,42 +283,34 @@ body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
     </div>
   </div>
 
-  <!-- Hiking hero -->
+  <!-- Hiking hero — frame only, no text -->
   <div class="hero" style="background:linear-gradient(150deg,#2a4a30,#3a6050,#1E3A4A)">
     <div style="position:absolute;inset:0;overflow:hidden">
-  <svg width="100%" height="100%" viewBox="0 0 414 220" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#2a4a5a"/>
-        <stop offset="100%" stop-color="#1E3140"/>
-      </linearGradient>
-    </defs>
-    <rect width="414" height="220" fill="url(#sky)"/>
-    <!-- Background mountains -->
-    <polygon points="0,180 80,80 160,130 240,60 320,110 414,70 414,220 0,220" fill="#1a3a28" opacity=".9"/>
-    <polygon points="0,200 60,120 140,160 220,90 300,140 380,100 414,120 414,220 0,220" fill="#243a30" opacity=".85"/>
-    <!-- Foreground rocks -->
-    <polygon points="0,220 100,160 200,190 300,155 414,175 414,220" fill="#1a2e20" opacity=".95"/>
-    <!-- Snow caps -->
-    <polygon points="80,80 95,95 65,95" fill="white" opacity=".4"/>
-    <polygon points="240,60 257,78 223,78" fill="white" opacity=".35"/>
-    <!-- Hiker silhouette -->
-    <g transform="translate(280,140)" opacity=".6">
-      <circle cx="8" cy="-20" r="5" fill="#EAD3C8"/>
-      <line x1="8" y1="-15" x2="8" y2="5" stroke="#EAD3C8" stroke-width="2"/>
-      <line x1="8" y1="-5" x2="2" y2="8" stroke="#EAD3C8" stroke-width="2"/>
-      <line x1="8" y1="-5" x2="14" y2="8" stroke="#EAD3C8" stroke-width="2"/>
-      <line x1="8" y1="5" x2="2" y2="18" stroke="#EAD3C8" stroke-width="2"/>
-      <line x1="8" y1="5" x2="14" y2="18" stroke="#EAD3C8" stroke-width="2"/>
-      <!-- walking stick -->
-      <line x1="4" y1="-10" x2="-2" y2="18" stroke="#EAD3C8" stroke-width="1.5"/>
-    </g>
-  </svg>
-</div>
-    <div class="hero-ov"></div>
-    <div class="hero-txt">
-      <p class="hero-q">Life is like a moderate/difficult hiking with beautiful sceneries.</p>
+      <svg width="100%" height="100%" viewBox="0 0 414 220" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#2a4a5a"/>
+            <stop offset="100%" stop-color="#1E3140"/>
+          </linearGradient>
+        </defs>
+        <rect width="414" height="220" fill="url(#sky)"/>
+        <polygon points="0,180 80,80 160,130 240,60 320,110 414,70 414,220 0,220" fill="#1a3a28" opacity=".9"/>
+        <polygon points="0,200 60,120 140,160 220,90 300,140 380,100 414,120 414,220 0,220" fill="#243a30" opacity=".85"/>
+        <polygon points="0,220 100,160 200,190 300,155 414,175 414,220" fill="#1a2e20" opacity=".95"/>
+        <polygon points="80,80 95,95 65,95" fill="white" opacity=".4"/>
+        <polygon points="240,60 257,78 223,78" fill="white" opacity=".35"/>
+        <g transform="translate(280,140)" opacity=".6">
+          <circle cx="8" cy="-20" r="5" fill="#EAD3C8"/>
+          <line x1="8" y1="-15" x2="8" y2="5" stroke="#EAD3C8" stroke-width="2"/>
+          <line x1="8" y1="-5" x2="2" y2="8" stroke="#EAD3C8" stroke-width="2"/>
+          <line x1="8" y1="-5" x2="14" y2="8" stroke="#EAD3C8" stroke-width="2"/>
+          <line x1="8" y1="5" x2="2" y2="18" stroke="#EAD3C8" stroke-width="2"/>
+          <line x1="8" y1="5" x2="14" y2="18" stroke="#EAD3C8" stroke-width="2"/>
+          <line x1="4" y1="-10" x2="-2" y2="18" stroke="#EAD3C8" stroke-width="1.5"/>
+        </g>
+      </svg>
     </div>
+    <div class="hero-ov"></div>
   </div>
 
   <!-- Voice player -->
@@ -344,36 +336,35 @@ body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
   <div id="vt-home" style="display:none">Life is like a moderate or difficult hiking with beautiful sceneries. For hiking, we equip ourselves with proper clothing, shoes, tools and snacks to enjoy the path in spite of facing challenging unpredictable trail. Do we need to do the same in our life? Do we need to properly equip ourselves with skills, coping strategy and self development to go through the challenging path? What we do when our mind sky gets cloudy, stormy with painful undesirable feelings: lonely, anxiety, frustration, shame, uncertainty and fear? When we face challenges in our relationship with others? When our criticizing mind gives us the not good enough message by sabotaging us, or our victim mind gives us miserable feelings? To be able to drive a vehicle, we need to get a driving license. Otherwise the car crash and damaging ourselves and others would be inevitable even with a Maserati. But in life we expect to drive our life and manage our mind and relationships automatically. Connect Me To Me is a tool to help us gain self development skills and get familiar with some of our mind functionality that leads to mind refining, transformation and resilience.</div>
 
   <div class="sec">
-    <div class="band b-rose">
-      <p>Life is like a moderate/difficult hiking with beautiful sceneries. For hiking, we equip ourselves with proper clothing, shoes, tools and snacks to enjoy the path in spite of facing challenging unpredictable trail.</p>
-      <p>Do we need to do the same in our life? Do we need to properly equip ourselves with skills, coping strategy and self development to go through the challenging path?</p>
-    </div>
-
-    <div class="band b-surf">
-      <p>What we do when our mind's sky gets cloudy, stormy with painful undesirable feelings: lonely, anxiety, frustration, shame, uncertainty and fear? When we face challenges in our relationship with others? When our criticizing mind gives us "not good enough" message by sabotaging us, or our victim mind gives us miserable feelings?</p>
-    </div>
-
     <div class="band b-teal">
       <p>To be able to drive a vehicle, we need to get a driving license. The car crash would be inevitable even with Maserati — but in life we expect to drive our life and manage our mind and relationships automatically!</p>
     </div>
 
+    <!-- Inner Connection frame with individual voice -->
     <div class="band b-navy">
-      <p>Connect Me To Me is a tool to help us gain self development skills and get familiar with some of our mind functionality that leads to mind refining, transformation and resilience.</p>
+      <p style="font-size:17px;font-weight:600;color:#EAD3C8;margin-bottom:10px">Inner Connection</p>
+      <p>Relationship with others is important aspect of life, but what about relationship with ourselves? How's the quality of this relationship?</p>
+      <p>Are we aware that outer world and outer relationship reflect our inner world and inner relationship?</p>
+      <p>Could we give unconditional love, care and support to ourselves without shaming, judging and sabotaging? Are we aware of what's going on in our mind as we walk through life?</p>
+      <p>Is the quality of inner relationship important for us? Are we willing to spend time and energy for it?</p>
+      <!-- Individual voice player -->
+      <div class="vp" style="margin:12px 0 0">
+        <div class="vp-top"><div class="vp-lbl">🎧 Listen</div>
+          <div class="vp-rgt"><div class="wv" id="wv-hic"><span></span><span></span><span></span><span></span><span></span></div><button class="spd" id="sp-hic" onclick="cycleS('hic')">1×</button></div></div>
+        <div class="vp-row">
+          <button class="vbtn" onclick="toggleV('hic','vt-hic')">
+            <svg id="pi-hic" width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg>
+            <svg id="pa-hic" width="16" height="16" viewBox="0 0 24 24" fill="white" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg>
+          </button>
+          <div class="vbar"><div class="vtrack"><div class="vfill" id="pf-hic"></div></div><div class="vtimes"><span id="ct-hic">0:00</span><span id="et-hic">—</span></div></div>
+        </div>
+      </div>
+      <div id="vt-hic" style="display:none">Inner Connection. Relationship with others is important aspect of life, but what about relationship with ourselves? How is the quality of this relationship? Are we aware that outer world and outer relationship reflect our inner world and inner relationship? Could we give unconditional love, care and support to ourselves without shaming, judging and sabotaging? Are we aware of what is going on in our mind as we walk through life? Is the quality of inner relationship important for us? Are we willing to spend time and energy for it?</div>
     </div>
 
     <div class="div"></div>
     <!-- WHY CONNECT ME TO ME — lives in Home -->
     <div class="slbl sr">Why Connect Me To Me?</div>
-    <div class="band b-surf">
-      <p>Precious materials like gasoline or diamond are transformed from invaluable materials like oil and charcoal through refinement process. What if transformation and refinement process could be applied for the mind and its demons and threats?</p>
-      <p>Mind Refinery transforms:</p>
-      <div style="margin-top:10px">
-        <div class="trow"><span class="tf">Threat</span><span class="ta">→</span><span class="tt">Treasure</span></div>
-        <div class="trow"><span class="tf">Demon</span><span class="ta">→</span><span class="tt">Diamond</span></div>
-        <div class="trow"><span class="tf">Dread</span><span class="ta">→</span><span class="tt">Trust</span></div>
-      </div>
-      <p style="margin-top:12px;font-family:'Playfair Display',serif;font-style:italic;font-size:17px">Are we willing to CHOOSE to process and refine the mind's threats into treasures?</p>
-    </div>
 
     <div class="band b-rose">
       <p>Practicing being a responsible adult for ourselves generates stronger inner connection and enhances the quality of relationship with ourselves. Improving inner relationship enhances quality of our outer relationship and quality of our life.</p>
@@ -554,11 +545,238 @@ body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
     </div>
 
     <div class="btn-row">
-      <button class="btn-sub" onclick="go('s-prac-ic')">Inner Child/Adult Connection</button>
-      <button class="btn-sub" onclick="go('s-prac-sc')">Self Caring &amp; Self Nourishing</button>
+      <button class="btn-sub" onclick="go('s-learn-ic-child')">Inner Child/Adult Connection</button>
     </div>
   </div>
 </div>
+</div>
+
+<!-- ══════════════════════════════════
+  LEARN: Inner Child Adult Connection menu
+══════════════════════════════════ -->
+<div class="S" id="s-learn-ic-child">
+<div class="bar">
+  <button class="ib" onclick="go('s-learn-ic')">←</button>
+  <span class="bar-title">Inner Child Adult Connection</span>
+  <div class="sp"></div>
+</div>
+<div class="roll">
+  <div class="vp">
+    <div class="vp-top">
+      <div class="vp-lbl">🎧 Listen</div>
+      <div class="vp-rgt">
+        <div class="wv" id="wv-licc"><span></span><span></span><span></span><span></span><span></span></div>
+        <button class="spd" id="sp-licc" onclick="cycleS('licc')">1×</button>
+      </div>
+    </div>
+    <div class="vp-row">
+      <button class="vbtn" onclick="toggleV('licc','vt-licc')">
+        <svg id="pi-licc" width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg>
+        <svg id="pa-licc" width="16" height="16" viewBox="0 0 24 24" fill="white" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg>
+      </button>
+      <div class="vbar">
+        <div class="vtrack"><div class="vfill" id="pf-licc"></div></div>
+        <div class="vtimes"><span id="ct-licc">0:00</span><span id="et-licc">—</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="vt-licc" style="display:none">Inner Child Adult Connection has three parts. First, Inner Child — understanding who our inner child is. Second, Supportive Compassionate Adult — learning how to become a supportive compassionate adult for ourselves. Third, Inner Child and Adult Conversation — the practice of having a compassionate dialogue between our adult self and our inner child.</div>
+  <div class="sec">
+    <div class="rm" onclick="go('s-learn-ic-who')"><div class="rm-title">Inner Child</div></div>
+    <div class="rm" onclick="openM('m-comp-adult')"><div class="rm-title">Supportive Compassionate Adult</div></div>
+    <div class="rm" onclick="go('s-learn-ic-conv')"><div class="rm-title">Inner Child/Adult Conversation</div></div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════════════════════════
+  LEARN: Who is our Inner Child
+══════════════════════════════════ -->
+<div class="S" id="s-learn-ic-who">
+<div class="bar">
+  <button class="ib" onclick="go('s-learn-ic-child')">←</button>
+  <span class="bar-title">Inner Child</span>
+  <div class="sp"></div>
+</div>
+<div class="roll">
+  <div class="vp">
+    <div class="vp-top">
+      <div class="vp-lbl">🎧 Listen</div>
+      <div class="vp-rgt">
+        <div class="wv" id="wv-licw"><span></span><span></span><span></span><span></span><span></span></div>
+        <button class="spd" id="sp-licw" onclick="cycleS('licw')">1×</button>
+      </div>
+    </div>
+    <div class="vp-row">
+      <button class="vbtn" onclick="toggleV('licw','vt-licw')">
+        <svg id="pi-licw" width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg>
+        <svg id="pa-licw" width="16" height="16" viewBox="0 0 24 24" fill="white" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg>
+      </button>
+      <div class="vbar">
+        <div class="vtrack"><div class="vfill" id="pf-licw"></div></div>
+        <div class="vtimes"><span id="ct-licw">0:00</span><span id="et-licw">—</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="vt-licw" style="display:none">Who is our inner child? The inner child is part of our personality that relates us to our past experience's memories, and associated feelings, to the feeling of playfulness, creativity and joy. This child isn't a separate person living inside of us, but a representation of our early childhood memories and our relationship with those memories. Also, it's a representation of our patterns and way of thinking and behaving that generated inside of us from those days. Based on our inner child perception from our early experiences, she or he might play a powerless victim or entitled prince or king who's center of the world and many other roles. Also, based on same perception, that little girl or boy might be wounded by unmet physical or emotional needs through abandonment, neglect, lack of support and security.</div>
+  <div class="sec">
+    <div class="band b-surf">
+      <p style="font-size:18px;font-weight:600;margin-bottom:14px;color:#EAD3C8">Who is our inner child?</p>
+      <p>The inner child is part of our personality that relates us to our past experience's memories, and associated feelings, to the feeling of playfulness, creativity and joy.</p>
+      <p>This Child isn't a separate person living inside of us, but a representation of our early childhood memories and our relationship with those memories. Also, it's a representation of our patterns and way of thinking and behaving that generated inside of us from those days.</p>
+      <p>Based on our inner child perception from our early experiences, she/he might play a powerless victim or entitled prince/king who's center of the world and many other roles.</p>
+      <p>Also, based on same perception, that little girl/boy might be wounded by unmet physical/emotional needs through abandonment, neglect, lack of support, security — or might have suffered from over meeting needs and wants and too much of attention.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════════════════════════
+  LEARN: Inner Child/Adult Conversation
+══════════════════════════════════ -->
+<div class="S" id="s-learn-ic-conv">
+<div class="bar">
+  <button class="ib" onclick="go('s-learn-ic-child')">←</button>
+  <span class="bar-title">Inner Child Adult Connection</span>
+  <div class="sp"></div>
+</div>
+<div class="roll">
+  <div class="vp">
+    <div class="vp-top">
+      <div class="vp-lbl">🎧 Listen</div>
+      <div class="vp-rgt">
+        <div class="wv" id="wv-licv"><span></span><span></span><span></span><span></span><span></span></div>
+        <button class="spd" id="sp-licv" onclick="cycleS('licv')">1×</button>
+      </div>
+    </div>
+    <div class="vp-row">
+      <button class="vbtn" onclick="toggleV('licv','vt-licv')">
+        <svg id="pi-licv" width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg>
+        <svg id="pa-licv" width="16" height="16" viewBox="0 0 24 24" fill="white" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg>
+      </button>
+      <div class="vbar">
+        <div class="vtrack"><div class="vfill" id="pf-licv"></div></div>
+        <div class="vtimes"><span id="ct-licv">0:00</span><span id="et-licv">—</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="vt-licv" style="display:none">Supportive Compassionate Adult Conversation. Recognize uncomfortable feelings. Name and label the feelings, rank the intensity. As a supportive, caring adult ask yourself, your inner child: How you feel? What are your unmet needs and wants that cause you these feelings? What do you want me to do for you? Practice the child and adult conversation.</div>
+  <div class="sec">
+    <div class="band b-surf">
+      <p style="font-size:17px;font-weight:600;margin-bottom:14px;color:#EAD3C8">Supportive Compassionate Adult Conversation</p>
+      <ul class="ckl">
+        <li><span class="ck">✓</span><span>Recognize uncomfortable feelings.</span></li>
+        <li><span class="ck">✓</span><span>Name and label the feelings, rank the intensity.</span></li>
+        <li><span class="ck">✓</span><span>As a supportive, caring adult ask yourself (your inner child):<br><br>* How you feel?<br><br>* What's your unmet needs and wants that cause you these feelings? What do you want me to do for you?</span></li>
+      </ul>
+      <button class="btn-sub" style="width:100%;margin-top:16px" onclick="go('s-prac-ic')">Practice Child/Adult Conversation</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════════════════════════
+  LEARN: Self Caring & Self Nourishing
+══════════════════════════════════ -->
+<div class="S" id="s-learn-ic-sc">
+<div class="bar">
+  <button class="ib" onclick="go('s-learn-ic')">←</button>
+  <span class="bar-title">Self Care &amp; Self Nourishment</span>
+  <div class="sp"></div>
+</div>
+<div class="roll">
+  <div class="vp">
+    <div class="vp-top">
+      <div class="vp-lbl">🎧 Listen</div>
+      <div class="vp-rgt">
+        <div class="wv" id="wv-licsc"><span></span><span></span><span></span><span></span><span></span></div>
+        <button class="spd" id="sp-licsc" onclick="cycleS('licsc')">1×</button>
+      </div>
+    </div>
+    <div class="vp-row">
+      <button class="vbtn" onclick="toggleV('licsc','vt-licsc')">
+        <svg id="pi-licsc" width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg>
+        <svg id="pa-licsc" width="16" height="16" viewBox="0 0 24 24" fill="white" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg>
+      </button>
+      <div class="vbar">
+        <div class="vtrack"><div class="vfill" id="pf-licsc"></div></div>
+        <div class="vtimes"><span id="ct-licsc">0:00</span><span id="et-licsc">—</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="vt-licsc" style="display:none">From below list of self care and self love, which of these do you do as an act of care and love for yourself? What do you do for yourself to comfort and soothe yourself in the middle of chaos, when you are experiencing undesirable feelings? Choose daily practices to give love and care to yourself. Active writing and journaling with pen and paper. Mindfulness, meditation and breath practice. Compassionate adult and inner child conversation and journaling. Supportive and caring adult for your inner child. Body movement and exercise. Healthy nutrition and home-made food cooked with love and joy. Loving caring bath and touch with scrub and oil massage. Candle and essential oil. Reaching out to others to help to soothe you.</div>
+  <div class="ic" style="padding-top:14px">
+    <svg width="80" height="80" viewBox="0 0 56 56" fill="none">
+      <path d="M28 48s-22-12-22-26a12 12 0 0 1 22-6.75A12 12 0 0 1 50 22c0 14-22 26-22 26z" fill="#845460" opacity=".85"/>
+      <path d="M10 34 Q4 40 8 46 Q12 50 18 46" stroke="#C4929E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M46 34 Q52 40 48 46 Q44 50 38 46" stroke="#C4929E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <div class="sec">
+    <div class="band b-surf">
+      <p>From below list of self care/self love — which of these do you do as an act of care and love for yourself?</p>
+      <p>What you do for yourself to comfort and soothe yourself in the middle of chaos, when you're experiencing undesirable feelings?</p>
+    </div>
+    <div class="band b-navy">
+      <p style="color:#D4A820!important;font-weight:600">Choose <u>DAILY PRACTICES</u> to give love and care to yourself.</p>
+    </div>
+    <div class="band b-rose">
+      <div class="slbl sr">Self Care Practice</div>
+      <ul class="sc-list">
+        <li><div class="sc-box"></div><span>Active writing/journaling with pen and paper</span></li>
+        <li><div class="sc-box"></div><span>Mindfulness / Meditation / Breath Practice</span></li>
+        <li><div class="sc-box"></div><span>Compassionate Adult/Inner Child Conversation / Journaling</span></li>
+        <li><div class="sc-box"></div><span>Supportive/caring Adult for your inner child (How you do this?)</span></li>
+        <li><div class="sc-box"></div><span>Body movement / exercise</span></li>
+        <li><div class="sc-box"></div><span class="sc-red">Healthy nutrition and HOME-MADE food cooked with love and joy</span></li>
+        <li><div class="sc-box"></div><span>Loving caring bath and touch with scrub and oil massage</span></li>
+        <li><div class="sc-box"></div><span>Candle and essential oil</span></li>
+        <li><div class="sc-box"></div><span>Reaching out others to help to soothe you</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════════════════════════
+  MODAL: Supportive Compassionate Adult
+══════════════════════════════════ -->
+<div class="mover" id="m-comp-adult" onclick="closeM('m-comp-adult')">
+  <div class="msheet" onclick="event.stopPropagation()">
+    <div class="mhd">
+      <span class="mtitle">Supportive Compassionate Adult</span>
+      <button class="mx" onclick="closeM('m-comp-adult')">✕</button>
+    </div>
+    <div class="vp" style="margin:0 0 14px">
+      <div class="vp-top">
+        <div class="vp-lbl">🎧 Listen</div>
+        <div class="vp-rgt">
+          <div class="wv" id="wv-mca"><span></span><span></span><span></span><span></span><span></span></div>
+          <button class="spd" id="sp-mca" onclick="cycleS('mca')">1×</button>
+        </div>
+      </div>
+      <div class="vp-row">
+        <button class="vbtn" onclick="toggleV('mca','vt-mca')">
+          <svg id="pi-mca" width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg>
+          <svg id="pa-mca" width="16" height="16" viewBox="0 0 24 24" fill="white" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg>
+        </button>
+        <div class="vbar">
+          <div class="vtrack"><div class="vfill" id="pf-mca"></div></div>
+          <div class="vtimes"><span id="ct-mca">0:00</span><span id="et-mca">—</span></div>
+        </div>
+      </div>
+    </div>
+    <div id="vt-mca" style="display:none">We become a supportive compassionate adult when we take responsibility for our feelings and inner child feelings — secured, loved, cared and supported — and when we soothe and comfort her or him exactly as supporting compassionate parents do. In this way, we don't see others responsible for our happiness and we don't expect them to meet our needs and wants for love, acceptance and security. Also, we don't feel responsible for others happiness as well. So, our inner child feels that we're there for her or him, it has our support and it's not alone. At the same time, we discipline ourselves for improvements and growth but with care, support, understanding and compassion.</div>
+    <div class="band b-surf" style="margin-bottom:12px">
+      <p>We become a supportive compassionate adult when we take responsibility for our feelings/inner child feelings (secured, loved, cared and supported) and when we soothe and comfort her/him exactly as supporting compassionate parents do.</p>
+    </div>
+    <div class="band b-navy" style="margin-bottom:12px">
+      <p>In this way, we don't see others responsible for our happiness and we don't expect them to meet our needs and wants for love, acceptance and security. Also, we don't feel responsible for others happiness as well.</p>
+    </div>
+    <div class="band b-teal">
+      <p>So, our inner child feels that we're there for her/him, it has our support and it's not alone. At the same time, we discipline ourselves for improvements and growth but with care, support, understanding and compassion.</p>
+    </div>
+  </div>
 </div>
 
 <!-- ══════════════════════════════════
@@ -646,7 +864,7 @@ body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
 </div>
 
 <!-- ══════════════════════════════════
-  LEARN: Mind Filter
+  LEARN: Mind Filter — exact Figma 783-36 layout
 ══════════════════════════════════ -->
 <div class="S" id="s-learn-mf">
 <div class="bar">
@@ -655,47 +873,103 @@ body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
   <div class="sp"></div>
 </div>
 <div class="roll">
-  <div class="vp">
-    <div class="vp-top">
-      <div class="vp-lbl">🎧 Listen</div>
-      <div class="vp-rgt">
-        <div class="wv" id="wv-lmf"><span></span><span></span><span></span><span></span><span></span></div>
-        <button class="spd" id="sp-lmf" onclick="cycleS('lmf')">1×</button>
-      </div>
-    </div>
+
+  <!-- Voice Player -->
+  <div class="vp" style="margin:12px 14px;background:rgba(21,38,54,.9);border-color:rgba(91,163,168,.25)">
+    <div class="vp-top"><div class="vp-lbl">🎧 Listen</div>
+      <div class="vp-rgt"><div class="wv" id="wv-lmf"><span></span><span></span><span></span><span></span><span></span></div><button class="spd" id="sp-lmf" onclick="cycleS('lmf')">1×</button></div></div>
     <div class="vp-row">
       <button class="vbtn" onclick="toggleV('lmf','vt-lmf')">
         <svg id="pi-lmf" width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg>
         <svg id="pa-lmf" width="16" height="16" viewBox="0 0 24 24" fill="white" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg>
       </button>
-      <div class="vbar">
-        <div class="vtrack"><div class="vfill" id="pf-lmf"></div></div>
-        <div class="vtimes"><span id="ct-lmf">0:00</span><span id="et-lmf">—</span></div>
-      </div>
+      <div class="vbar"><div class="vtrack"><div class="vfill" id="pf-lmf"></div></div><div class="vtimes"><span id="ct-lmf">0:00</span><span id="et-lmf">—</span></div></div>
     </div>
   </div>
-  <div id="vt-lmf" style="display:none">Our mind filter is the lens through which we interpret every experience. It is shaped by our core beliefs, inner voice and past experiences. The mind filter determines what we notice, how we interpret events, and what meaning we give to our experiences. By becoming aware of our mind filter, we can begin to question the stories our mind creates and find a more compassionate and accurate understanding of ourselves and our world.</div>
+  <div id="vt-lmf" style="display:none">What is the source of our mind filter? Core Beliefs. Our brain is wired based on the pattern and belief system that run the life show behind the curtain. These patterns create negative thoughts, inner voices and the associated feelings are consequently generated. In disconnected mode, the world is observed through the filter of our mind perceptions. The story that this filter makes from life circumstances seems so real but it is reality of our mind. Example: My friend didn't respond to my text message! Inner Voices say: Why she didn't respond my text? Is she mad at me? What if she doesn't like me anymore? Feelings: Ignored, Rejected, Disappointed, Angry, Sadness. Core Beliefs: I'm boring, I'm not important, I'm not matter.</div>
 
-  <div class="sec">
-    <div class="band b-navy">
-      <p>Our mind filter is the lens through which we interpret every experience. It is shaped by our core beliefs, inner voice and past experiences.</p>
-      <p>The mind filter determines what we notice, how we interpret events, and what meaning we give to our experiences.</p>
-      <p>By becoming aware of our mind filter, we can begin to question the stories our mind creates and find a more compassionate understanding of ourselves.</p>
+  <!-- NEW FRAME: What's the source of our mind's filter -->
+  <div style="background:#1E3140;padding:18px 16px;margin:12px 14px;border-radius:14px;border:1px solid rgba(91,163,168,.25)">
+    <p style="color:#EAD3C8;font-size:16px;font-weight:600;margin-bottom:8px">What's the source of our mind's filter?</p>
+    <p style="color:#5BA3A8;font-size:16px;font-weight:600;margin-bottom:10px">Core Beliefs</p>
+    <p style="color:#BDC7C9;font-size:15px;line-height:1.82">Our brain is wired based on the pattern and belief system that run the life show behind the curtain. These patterns create negative thoughts, inner voices and the associated feelings are consequently generated.</p>
+  </div>
+
+  <!-- Dark navy header from Figma -->
+  <div class="band b-rose" style="padding:14px 16px;text-align:center;margin-bottom:0">
+    <p style="color:#fff;font-size:17px;font-weight:500;line-height:1.5">Example of experiencing the world through the perceived mind filter</p>
+  </div>
+
+  <!-- Grey band with pink example text -->
+  <div class="band b-surf" style="padding:12px 16px;text-align:center;margin-bottom:0">
+    <p style="color:#EAD3C8;font-size:17px;font-weight:500">My friend didn't respond to my text message!</p>
+  </div>
+
+  <!-- Pink box with glasses — Mind Perception + Story Making Factory -->
+  <div class="band b-surf" style="border-radius:16px;margin:12px 10px;padding:16px 10px 10px">
+    <svg width="100%" height="130" viewBox="0 0 340 130" xmlns="http://www.w3.org/2000/svg">
+      <rect x="5" y="10" width="155" height="110" rx="55" fill="#d4b8bc" stroke="#5a3535" stroke-width="5"/>
+      <rect x="180" y="10" width="155" height="110" rx="55" fill="#d4b8bc" stroke="#5a3535" stroke-width="5"/>
+      <line x1="160" y1="65" x2="180" y2="65" stroke="#5a3535" stroke-width="5"/>
+      <line x1="5" y1="65" x2="-10" y2="55" stroke="#5a3535" stroke-width="4"/>
+      <line x1="335" y1="65" x2="350" y2="55" stroke="#5a3535" stroke-width="4"/>
+      <circle cx="82" cy="65" r="42" fill="#c8a8ae" stroke="#5a3535" stroke-width="3"/>
+      <circle cx="257" cy="65" r="42" fill="#c8a8ae" stroke="#5a3535" stroke-width="3"/>
+      <text x="82" y="58" text-anchor="middle" font-size="13" fill="#1e1771" font-family="Jost" font-weight="600">Mind</text>
+      <text x="82" y="74" text-anchor="middle" font-size="13" fill="#1e1771" font-family="Jost" font-weight="600">Perception</text>
+      <text x="257" y="51" text-anchor="middle" font-size="13" fill="#1e1771" font-family="Jost" font-weight="600">Story</text>
+      <text x="257" y="67" text-anchor="middle" font-size="13" fill="#1e1771" font-family="Jost" font-weight="600">Making</text>
+      <text x="257" y="83" text-anchor="middle" font-size="13" fill="#1e1771" font-family="Jost" font-weight="600">Factory</text>
+    </svg>
+  </div>
+
+  <!-- Inner Voices teardrop -->
+  <div style="display:flex;justify-content:center;margin:0">
+    <div style="background:#845460;border-radius:50% 50% 50% 50% / 40% 40% 60% 60%;padding:12px 30px 22px;text-align:center;min-width:160px">
+      <p style="color:#fff;font-size:17px;font-weight:600">Inner  Voices</p>
     </div>
-    <div class="band b-teal">
-      <p>How is mind filter functioning? Our beliefs act as filters — we selectively notice information that confirms what we already believe, and we often miss evidence that contradicts it.</p>
+  </div>
+  <div class="band b-surf" style="border-radius:14px;margin:0 10px 0;padding:14px 16px;text-align:center">
+    <p style="color:#EAD3C8;font-size:16px;line-height:1.8">Why she didn't respond my text?<br>Is she mad at me?<br>What if she doesn't like me anymore?</p>
+  </div>
+
+  <!-- Feelings teardrop -->
+  <div style="display:flex;justify-content:center;margin:0">
+    <div style="background:#845460;border-radius:50% 50% 50% 50% / 40% 40% 60% 60%;padding:12px 30px 22px;text-align:center;min-width:160px">
+      <p style="color:#fff;font-size:17px;font-weight:600">Feelings</p>
     </div>
+  </div>
+  <div class="band b-surf" style="border-radius:14px;margin:0 10px 0;padding:14px 16px;text-align:center">
+    <p style="color:#EAD3C8;font-size:16px;line-height:1.8">Ignored  Rejected  Disappointed<br>Angry  Sadness</p>
+  </div>
+
+  <!-- Core Beliefs teardrop -->
+  <div style="display:flex;justify-content:center;margin:0">
+    <div style="background:#845460;border-radius:50% 50% 50% 50% / 40% 40% 60% 60%;padding:12px 30px 22px;text-align:center;min-width:160px">
+      <p style="color:#fff;font-size:17px;font-weight:600">Core Beliefs</p>
+    </div>
+  </div>
+  <div class="band b-surf" style="border-radius:14px;margin:0 10px 0;padding:14px 16px;text-align:center">
+    <p style="color:#EAD3C8;font-size:16px;line-height:1.8">I'm boring<br>I'm not important<br>I'm not matter</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="band b-navy" style="padding:16px;margin-top:0">
+    <button onclick="go('s-prac-mf')" style="width:100%;background:#e5e5e5;border:1.5px solid #555;border-radius:10px;padding:14px 16px;font-size:15px;color:#222;cursor:pointer;font-family:'Jost',sans-serif;text-align:left">
+      Mind Filter Analysis Practice<br>(Inner Voice, Feelings, Core Beliefs)
+    </button>
   </div>
 </div>
 </div>
-
 <!-- ══════════════════════════════════
-  LEARN: Inner Voice
+  LEARN: Inner Voice — Inner Voices concept + Inner Critic + Inner Victim + Inner Entitlement
 ══════════════════════════════════ -->
+
+<!-- Screen 1: Inner Voices (concept) -->
 <div class="S" id="s-learn-iv">
 <div class="bar">
   <button class="ib" onclick="go('s-learn')">←</button>
-  <span class="bar-title">Inner Voice</span>
+  <span class="bar-title" style="color:#161a7a">Inner Voices</span>
   <div class="sp"></div>
 </div>
 <div class="roll">
@@ -718,17 +992,285 @@ body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
       </div>
     </div>
   </div>
-  <div id="vt-liv" style="display:none">What is inner voice and how does it impact us? Our inner voice is the ongoing internal narrative — the running commentary in our mind about ourselves, others and the world. It is shaped by our core beliefs, past experiences and the voices of significant people in our lives. The inner voice can be critical, supportive, fearful or compassionate. Becoming aware of our inner voice is the first step to transforming it into a kinder, more supportive presence.</div>
+  <div id="vt-liv" style="display:none">Inner negative voice is a whispering voice at the back of our mind. We identify ourselves with this voice and our thoughts and cannot differentiate them from ourselves as they sound so real. Inner negative talk gives meaning to our experience. The voice pretends what it is telling us is truth and makes us believe it. In this way, it prevents us from reaching our highest potential, to reach our desires and goals. There are three types of inner voice: the Inner Critic, the Inner Victim, and the Inner Entitlement.</div>
 
-  <div class="sec">
-    <div class="band b-navy">
-      <p>Our inner voice is the ongoing internal narrative — the running commentary in our mind about ourselves, others and the world.</p>
-      <p>It is shaped by our core beliefs, past experiences and the voices of significant people in our lives.</p>
-      <p>The inner voice can be critical, supportive, fearful or compassionate. Becoming aware of our inner voice is the first step to transforming it.</p>
+  <!-- 3 figures image from Figma -->
+  <div class="band b-surf" style="padding:20px 14px 10px;text-align:center">
+    <svg width="240" height="160" viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+      <!-- Red critic figure (left) -->
+      <g transform="translate(20,20)">
+        <circle cx="30" cy="20" r="18" fill="#c0392b"/>
+        <rect x="18" y="38" width="24" height="50" rx="4" fill="#c0392b"/>
+        <line x1="18" y1="55" x2="4" y2="75" stroke="#c0392b" stroke-width="6" stroke-linecap="round"/>
+        <line x1="42" y1="55" x2="56" y2="45" stroke="#c0392b" stroke-width="6" stroke-linecap="round"/>
+        <line x1="25" y1="88" x2="20" y2="115" stroke="#c0392b" stroke-width="6" stroke-linecap="round"/>
+        <line x1="35" y1="88" x2="40" y2="115" stroke="#c0392b" stroke-width="6" stroke-linecap="round"/>
+      </g>
+      <!-- Grey neutral figure (center) -->
+      <g transform="translate(90,10)">
+        <circle cx="30" cy="24" r="22" fill="#bdc3c7"/>
+        <rect x="16" y="46" width="28" height="55" rx="4" fill="#bdc3c7"/>
+        <line x1="16" y1="62" x2="0" y2="80" stroke="#bdc3c7" stroke-width="7" stroke-linecap="round"/>
+        <line x1="44" y1="62" x2="60" y2="80" stroke="#bdc3c7" stroke-width="7" stroke-linecap="round"/>
+        <line x1="23" y1="101" x2="18" y2="130" stroke="#bdc3c7" stroke-width="7" stroke-linecap="round"/>
+        <line x1="37" y1="101" x2="42" y2="130" stroke="#bdc3c7" stroke-width="7" stroke-linecap="round"/>
+      </g>
+      <!-- Blue victim figure (right) -->
+      <g transform="translate(170,30)">
+        <circle cx="25" cy="18" r="16" fill="#2980b9"/>
+        <rect x="14" y="34" width="22" height="45" rx="4" fill="#2980b9"/>
+        <line x1="25" y1="46" x2="12" y2="60" stroke="#2980b9" stroke-width="5" stroke-linecap="round"/>
+        <line x1="25" y1="46" x2="38" y2="55" stroke="#2980b9" stroke-width="5" stroke-linecap="round"/>
+        <line x1="20" y1="79" x2="16" y2="100" stroke="#2980b9" stroke-width="5" stroke-linecap="round"/>
+        <line x1="30" y1="79" x2="34" y2="100" stroke="#2980b9" stroke-width="5" stroke-linecap="round"/>
+        <!-- drooping head -->
+        <line x1="25" y1="34" x2="18" y2="20" stroke="#2980b9" stroke-width="3"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- Dark navy text block from Figma -->
+  <div class="band b-navy" style="padding:20px 16px;margin-bottom:0">
+    <p style="color:#fff;font-size:16px;line-height:1.85;font-weight:300;margin-bottom:14px">Inner negative voice is a whispering voice back of our mind. We identify ourselves with this voice and our thoughts and can't differentiate them from ourselves as they sound so real.</p>
+    <p style="color:#fff;font-size:16px;line-height:1.85;font-weight:300;margin-bottom:14px">Inner negative talk gives meaning to our experience!<br>The voice pretends what it's telling us is truth and makes us believing it!</p>
+    <p style="color:#fff;font-size:16px;line-height:1.85;font-weight:300">In this way, it prevents us to reach our highest potential, to reach our desires and goals!</p>
+  </div>
+
+  <!-- Venn diagram: Inner Voices / Feelings / Beliefs -->
+  <div class="band b-surf" style="padding:20px 14px;text-align:center">
+    <svg width="220" height="160" viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg">
+      <!-- Top circle: Inner Voices -->
+      <circle cx="110" cy="58" r="52" fill="#c8c8c8" opacity=".85"/>
+      <!-- Bottom left: Feelings -->
+      <circle cx="78" cy="108" r="52" fill="#c8c8c8" opacity=".85"/>
+      <!-- Bottom right: Beliefs -->
+      <circle cx="142" cy="108" r="52" fill="#c8c8c8" opacity=".85"/>
+      <text x="110" y="52" text-anchor="middle" font-size="14" fill="#161a7a" font-family="Jost" font-weight="600">Inner</text>
+      <text x="110" y="68" text-anchor="middle" font-size="14" fill="#161a7a" font-family="Jost" font-weight="600">Voices</text>
+      <text x="66" y="118" text-anchor="middle" font-size="14" fill="#161a7a" font-family="Jost" font-weight="600">Feelings</text>
+      <text x="150" y="118" text-anchor="middle" font-size="14" fill="#161a7a" font-family="Jost" font-weight="600">Beliefs</text>
+    </svg>
+  </div>
+
+  <!-- 3 pink buttons from Figma: Inner Critic | Inner Victim | Inner Entitlement -->
+  <div style="background:#1d364d;padding:20px 16px 24px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+      <button onclick="go('s-iv-critic')" style="background:#ddc3d8;border:none;border-radius:12px;padding:22px 12px;font-size:17px;font-weight:700;color:#161a7a;cursor:pointer;font-family:'Jost',sans-serif;transition:all .2s">Inner Critic</button>
+      <button onclick="go('s-iv-victim')" style="background:#ddc3d8;border:none;border-radius:12px;padding:22px 12px;font-size:17px;font-weight:700;color:#161a7a;cursor:pointer;font-family:'Jost',sans-serif;transition:all .2s">Inner Victim</button>
     </div>
-    <div class="band b-rose">
-      <p>What is inner voice and how it impacts us? When the inner voice is harsh and critical, it reinforces shame and unworthiness. When we transform it into a compassionate voice, we create the inner safety needed for growth and healing.</p>
+    <button onclick="go('s-iv-entitle')" style="width:100%;background:#ddc3d8;border:none;border-radius:12px;padding:22px 12px;font-size:17px;font-weight:700;color:#161a7a;cursor:pointer;font-family:'Jost',sans-serif;transition:all .2s">Inner Entitlement</button>
+  </div>
+</div>
+</div>
+
+<!-- Screen 2: Inner Critic (121-0) -->
+<div class="S" id="s-iv-critic">
+<div class="bar">
+  <button class="ib" onclick="go('s-learn-iv')">←</button>
+  <span class="bar-title" style="color:#f0a830">Inner Critic</span>
+  <div class="sp"></div>
+</div>
+<div class="roll">
+  <div class="vp">
+    <div class="vp-top"><div class="vp-lbl">🎧 Listen</div>
+      <div class="vp-rgt"><div class="wv" id="wv-ivc"><span></span><span></span><span></span><span></span><span></span></div><button class="spd" id="sp-ivc" onclick="cycleS('ivc')">1×</button></div></div>
+    <div class="vp-row">
+      <button class="vbtn" onclick="toggleV('ivc','vt-ivc')">
+        <svg id="pi-ivc" width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg>
+        <svg id="pa-ivc" width="16" height="16" viewBox="0 0 24 24" fill="white" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg>
+      </button>
+      <div class="vbar"><div class="vtrack"><div class="vfill" id="pf-ivc"></div></div><div class="vtimes"><span id="ct-ivc">0:00</span><span id="et-ivc">—</span></div></div>
     </div>
+  </div>
+  <div id="vt-ivc" style="display:none">Can you recognize the inner critic voice whispering back of your mind? Inner critic judges us in a mean nasty harsh devaluating tone. The voice uses shaming to motivate us to make progress, to achieve goals and avoid mistakes, but in a destructive way. It targets our competency, adequacy and worthiness. Core negative beliefs: I'm unworthy, I'm inadequate, I'm not enough, I'm useless, I'm stupid. Associated feelings: Shame, Unworthiness, Inadequacy, Deficiency.</div>
+
+  <!-- Voice Player -->
+  <div class="vp">
+    <div class="vp-top"><div class="vp-lbl">🎧 Listen</div><div class="vp-rgt"><div class="wv" id="wv-ivc"><span></span><span></span><span></span><span></span><span></span></div><button class="spd" id="sp-ivc" onclick="cycleS('ivc')">1×</button></div></div>
+    <div class="vp-row"><button class="vbtn" onclick="toggleV('ivc','vt-ivc')"><svg id="pi-ivc" width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg><svg id="pa-ivc" width="16" height="16" viewBox="0 0 24 24" fill="white" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg></button><div class="vbar"><div class="vtrack"><div class="vfill" id="pf-ivc"></div></div><div class="vtimes"><span id="ct-ivc">0:00</span><span id="et-ivc">—</span></div></div></div>
+  </div>
+  <!-- Brown header bar from Figma -->
+  <div class="band b-rose" style="padding:16px;margin-bottom:0">
+    <p style="color:#fff;font-size:17px;line-height:1.7">Can you recognize the <u>inner critic voice</u> whispering back of your mind?</p>
+  </div>
+
+  <!-- Word cloud -->
+  <div class="band b-surf" style="min-height:280px;position:relative;padding:16px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+    <!-- Small black figures top-left and right -->
+    <div style="position:absolute;top:10px;left:10px;opacity:.7">
+      <svg width="40" height="60" viewBox="0 0 40 60"><circle cx="12" cy="10" r="8" fill="#222"/><rect x="7" y="18" width="10" height="22" rx="2" fill="#222"/><line x1="7" y1="26" x2="0" y2="38" stroke="#222" stroke-width="3" stroke-linecap="round"/><line x1="17" y1="26" x2="24" y2="34" stroke="#222" stroke-width="3" stroke-linecap="round"/><line x1="10" y1="40" x2="8" y2="58" stroke="#222" stroke-width="3" stroke-linecap="round"/><line x1="14" y1="40" x2="16" y2="58" stroke="#222" stroke-width="3" stroke-linecap="round"/>
+      <!-- shadow grey figure -->
+      <circle cx="28" cy="12" r="7" fill="#bbb" opacity=".5"/><rect x="24" y="19" width="8" height="18" rx="2" fill="#bbb" opacity=".5"/></svg>
+    </div>
+    <div style="margin-left:50px;margin-top:5px">
+      <div style="background:#7a9ab0;color:#fff;padding:7px 13px;border-radius:20px;font-size:13px;font-weight:600;display:inline-block;transform:rotate(-8deg);margin:3px">You can't do anything right.</div>
+    </div>
+    <div style="background:#4a5a8a;color:#fff;padding:7px 13px;border-radius:20px;font-size:13px;font-weight:600;display:inline-block;transform:rotate(4deg);margin:3px;margin-left:60px">You CAN't do it!</div>
+    <div style="width:100%;background:#2a2a4a;color:#fff;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;transform:rotate(2deg);margin:3px">Stupid you! Made a mistake again!</div>
+    <div style="background:#d9534f;color:#fff;padding:7px 13px;border-radius:20px;font-size:13px;font-weight:600;transform:rotate(-5deg);margin:3px">You're not enough!</div>
+    <div style="background:#2a2a4a;color:#fff;padding:7px 13px;border-radius:20px;font-size:13px;font-weight:600;transform:rotate(-4deg);margin:3px">You're unworthy to xxx.</div>
+    <!-- right side figure -->
+    <div style="position:absolute;right:10px;top:100px;opacity:.7">
+      <svg width="40" height="60" viewBox="0 0 40 60"><circle cx="12" cy="10" r="8" fill="#222"/><rect x="7" y="18" width="10" height="22" rx="2" fill="#222"/><line x1="7" y1="26" x2="0" y2="34" stroke="#222" stroke-width="3" stroke-linecap="round"/><line x1="17" y1="26" x2="24" y2="34" stroke="#222" stroke-width="3" stroke-linecap="round"/><line x1="10" y1="40" x2="8" y2="58" stroke="#222" stroke-width="3" stroke-linecap="round"/><line x1="14" y1="40" x2="16" y2="58" stroke="#222" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="28" cy="12" r="7" fill="#bbb" opacity=".5"/><rect x="24" y="19" width="8" height="18" rx="2" fill="#bbb" opacity=".5"/></svg>
+    </div>
+    <div style="background:#3a3a6a;color:#fff;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;transform:rotate(-3deg);margin:3px">You've done nothing productive!</div>
+    <div style="background:#2a2a4a;color:#f0c040;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;transform:rotate(3deg);margin:3px">You're not a good enough xxx (mom/dad/partner/employee...)</div>
+    <div style="background:#b0bec5;color:#333;padding:7px 13px;border-radius:20px;font-size:13px;font-weight:600;transform:rotate(-2deg);margin:3px">You're back, you're behind.</div>
+  </div>
+
+  <!-- Dark navy text from Figma -->
+  <div class="band b-navy" style="padding:18px 16px">
+    <p style="color:#fff;font-size:15px;line-height:1.82">Inner critic judges us in a mean nasty harsh devaluating tone!<br>The voice use shaming to motivate us to make progress, to achieve goals and avoid mistakes, but in a destructive way.<br>It targets our competency, adequacy and worthiness.</p>
+  </div>
+
+  <!-- Grey cards with blue header + yellow text from Figma -->
+  <div style="padding:14px">
+    <div class="band b-surf" style="border-radius:18px;padding:18px;margin-bottom:12px">
+      <p style="color:#EAD3C8;font-size:16px;font-weight:700;margin-bottom:10px">Core Negative Beliefs</p>
+      <p style="color:#BDC7C9;font-size:15px;line-height:2">I'm unworthy<br>I'm inadequate<br>I'm not enough<br>I'm useless<br>I'm stupid</p>
+    </div>
+    <div class="band b-surf" style="border-radius:18px;padding:18px">
+      <p style="color:#EAD3C8;font-size:16px;font-weight:700;margin-bottom:10px">Associated Feelings</p>
+      <p style="color:#BDC7C9;font-size:15px;line-height:2">Shame<br>Unworthiness<br>Inadequacy<br>Deficiency</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Screen 3: Inner Victim (123-14) -->
+<div class="S" id="s-iv-victim">
+<div class="bar">
+  <button class="ib" onclick="go('s-learn-iv')">←</button>
+  <span class="bar-title" style="color:#f0a830">Inner Victim</span>
+  <div class="sp"></div>
+</div>
+<div class="roll">
+  <div class="vp">
+    <div class="vp-top"><div class="vp-lbl">🎧 Listen</div>
+      <div class="vp-rgt"><div class="wv" id="wv-ivv"><span></span><span></span><span></span><span></span><span></span></div><button class="spd" id="sp-ivv" onclick="cycleS('ivv')">1×</button></div></div>
+    <div class="vp-row">
+      <button class="vbtn" onclick="toggleV('ivv','vt-ivv')">
+        <svg id="pi-ivv" width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg>
+        <svg id="pa-ivv" width="16" height="16" viewBox="0 0 24 24" fill="white" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg>
+      </button>
+      <div class="vbar"><div class="vtrack"><div class="vfill" id="pf-ivv"></div></div><div class="vtimes"><span id="ct-ivv">0:00</span><span id="et-ivv">—</span></div></div>
+    </div>
+  </div>
+  <div class="vp">
+    <div class="vp-top"><div class="vp-lbl">🎧 Listen</div><div class="vp-rgt"><div class="wv" id="wv-ivv"><span></span><span></span><span></span><span></span><span></span></div><button class="spd" id="sp-ivv" onclick="cycleS('ivv')">1×</button></div></div>
+    <div class="vp-row"><button class="vbtn" onclick="toggleV('ivv','vt-ivv')"><svg id="pi-ivv" width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg><svg id="pa-ivv" width="16" height="16" viewBox="0 0 24 24" fill="white" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg></button><div class="vbar"><div class="vtrack"><div class="vfill" id="pf-ivv"></div></div><div class="vtimes"><span id="ct-ivv">0:00</span><span id="et-ivv">—</span></div></div></div>
+  </div>
+  <div id="vt-ivv" style="display:none">What about inner victim voice? Can you recognize it? The inner victim blames life and others for lack of what doesn't exist like desirable education, career, relationship, financial situation. It passively rejects present moment as it's not the way it SHOULD be. Inner victim doesn't allow us to see our contribution in where we're standing in life. Core negative beliefs: I'm supportless, I'm helpless, I'm powerless, I'm a failure. Associated feelings: Miserable, Disappointed, Frustrated, Powerless, Supportless, Trapped, Unable to change.</div>
+
+  <div class="band b-rose" style="padding:16px;margin-bottom:0">
+    <p style="color:#fff;font-size:17px;line-height:1.7">What about <u>inner victim voice</u>? can you recognize it?</p>
+  </div>
+
+  <!-- Word cloud victim -->
+  <div class="band b-surf" style="min-height:320px;padding:14px;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start;position:relative">
+    <div style="width:100%;background:#6a2060;color:#fff;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;transform:rotate(-2deg)">Life won't change. My effort is meaningless.</div>
+    <div style="background:#9aa0b0;color:#2a2a6a;padding:7px 13px;border-radius:16px;font-size:13px;font-weight:600;transform:rotate(-4deg)">Others are resposible for my life! They did xxx to me.</div>
+    <!-- chained figure -->
+    <div style="width:130px;flex-shrink:0;margin-top:5px">
+      <svg width="110" height="110" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="55" cy="18" r="14" fill="#ddd" stroke="#bbb" stroke-width="1.5"/>
+        <rect x="46" y="32" width="18" height="35" rx="4" fill="#ddd" stroke="#bbb" stroke-width="1.5"/>
+        <line x1="46" y1="45" x2="30" y2="58" stroke="#ddd" stroke-width="5" stroke-linecap="round"/>
+        <line x1="64" y1="45" x2="80" y2="55" stroke="#ddd" stroke-width="5" stroke-linecap="round"/>
+        <line x1="50" y1="67" x2="40" y2="92" stroke="#ddd" stroke-width="5" stroke-linecap="round"/>
+        <line x1="60" y1="67" x2="72" y2="88" stroke="#ddd" stroke-width="5" stroke-linecap="round"/>
+        <!-- chain ball -->
+        <line x1="40" y1="92" x2="38" y2="100" stroke="#888" stroke-width="2"/>
+        <circle cx="35" cy="106" r="7" fill="#555"/>
+      </svg>
+    </div>
+    <div style="background:#6a2060;color:#f0c040;padding:7px 13px;border-radius:16px;font-size:13px;font-weight:600;transform:rotate(4deg);flex:1">I have no control over my life!</div>
+    <div style="background:#aaa;color:#222;padding:7px 13px;border-radius:16px;font-size:13px;font-weight:600;transform:rotate(-3deg)">Why me?! Poor me!</div>
+    <div style="background:#6a2060;color:#fff;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;transform:rotate(-4deg)">I'm powerless to change my life circumstances.</div>
+    <div style="background:#1d364d;color:#fff;padding:7px 13px;border-radius:16px;font-size:13px;font-weight:600;transform:rotate(3deg)">Why this happens to me?!</div>
+    <div style="background:#6a2060;color:#fff;padding:7px 13px;border-radius:20px;font-size:13px;font-weight:600;transform:rotate(-2deg)">I'm stuck in a same shit!</div>
+  </div>
+
+  <div class="band b-navy" style="padding:18px 16px">
+    <p style="color:#fff;font-size:15px;line-height:1.82">The inner victim blames life and others for lack of what doesn't exist like desirable education, career, relationship, financial situation. It passively rejects present moment as it's not they way it SHOUD be. Inner victim doesn't allow us to see our contribution in where we're standing in life.</p>
+  </div>
+
+  <div style="padding:14px">
+    <div class="band b-surf" style="border-radius:18px;padding:18px;margin-bottom:12px">
+      <p style="color:#EAD3C8;font-size:16px;font-weight:700;margin-bottom:10px">Core Negative Beliefs</p>
+      <p style="color:#BDC7C9;font-size:15px;line-height:2">I'm supportless<br>I'm helpless<br>I'm powerless<br>I'm a failure</p>
+    </div>
+    <div class="band b-surf" style="border-radius:18px;padding:18px">
+      <p style="color:#EAD3C8;font-size:16px;font-weight:700;margin-bottom:10px">Associated Feelings</p>
+      <p style="color:#BDC7C9;font-size:15px;line-height:2">Miserable<br>Disappointed<br>Frustrated<br>Powerless<br>Supportless<br>Trapped<br>Unable to change</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Screen 4: Inner Entitlement (503-81) -->
+<div class="S" id="s-iv-entitle">
+<div class="bar">
+  <button class="ib" onclick="go('s-learn-iv')">←</button>
+  <span class="bar-title" style="color:#f0a830">Inner Entitlement</span>
+  <div class="sp"></div>
+</div>
+<div class="roll">
+  <div class="vp">
+    <div class="vp-top"><div class="vp-lbl">🎧 Listen</div>
+      <div class="vp-rgt"><div class="wv" id="wv-ive"><span></span><span></span><span></span><span></span><span></span></div><button class="spd" id="sp-ive" onclick="cycleS('ive')">1×</button></div></div>
+    <div class="vp-row">
+      <button class="vbtn" onclick="toggleV('ive','vt-ive')">
+        <svg id="pi-ive" width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg>
+        <svg id="pa-ive" width="16" height="16" viewBox="0 0 24 24" fill="white" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg>
+      </button>
+      <div class="vbar"><div class="vtrack"><div class="vfill" id="pf-ive"></div></div><div class="vtimes"><span id="ct-ive">0:00</span><span id="et-ive">—</span></div></div>
+    </div>
+  </div>
+  <div class="vp">
+    <div class="vp-top"><div class="vp-lbl">🎧 Listen</div><div class="vp-rgt"><div class="wv" id="wv-ive"><span></span><span></span><span></span><span></span><span></span></div><button class="spd" id="sp-ive" onclick="cycleS('ive')">1×</button></div></div>
+    <div class="vp-row"><button class="vbtn" onclick="toggleV('ive','vt-ive')"><svg id="pi-ive" width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg><svg id="pa-ive" width="16" height="16" viewBox="0 0 24 24" fill="white" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg></button><div class="vbar"><div class="vtrack"><div class="vfill" id="pf-ive"></div></div><div class="vtimes"><span id="ct-ive">0:00</span><span id="et-ive">—</span></div></div></div>
+  </div>
+  <div id="vt-ive" style="display:none">What about inner entitlement voice? Can you recognize it? It's all about me! Others are responsible for my needs and wants. I'm the best! I'm right, you're wrong! You can have whatever you want! Others owe me everything! It wasn't my fault, it's yours. The inner entitlement voice makes us feel we are the center of the world and that others must meet our needs and expectations.</div>
+
+  <div class="band b-rose" style="padding:16px;margin-bottom:0">
+    <p style="color:#fff;font-size:17px;line-height:1.7">What about <u>inner entitlement voice</u>? can you recognize it?</p>
+  </div>
+
+  <!-- Word cloud entitlement -->
+  <div class="band b-surf" style="min-height:300px;padding:14px;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start;position:relative">
+    <div style="background:#6a2060;color:#fff;padding:7px 14px;border-radius:20px;font-size:13px;font-weight:600">It's all about me!</div>
+    <div style="background:#7a9ab0;color:#fff;padding:7px 14px;border-radius:16px;font-size:13px;font-weight:600;transform:rotate(4deg)">Others are resposible for my needs and wants</div>
+    <div style="width:80px;flex-shrink:0">
+      <!-- Star figure from Figma -->
+      <svg width="70" height="110" viewBox="0 0 70 110" xmlns="http://www.w3.org/2000/svg">
+        <!-- Radiating lines -->
+        <line x1="35" y1="8" x2="35" y2="0" stroke="#333" stroke-width="2"/>
+        <line x1="48" y1="12" x2="55" y2="5" stroke="#333" stroke-width="2"/>
+        <line x1="22" y1="12" x2="15" y2="5" stroke="#333" stroke-width="2"/>
+        <!-- Head -->
+        <circle cx="35" cy="18" r="12" fill="#222"/>
+        <text x="35" y="23" text-anchor="middle" font-size="10" fill="white">★</text>
+        <!-- Body -->
+        <rect x="27" y="30" width="16" height="28" rx="3" fill="#222"/>
+        <!-- Arms raised in victory -->
+        <line x1="27" y1="38" x2="10" y2="25" stroke="#222" stroke-width="5" stroke-linecap="round"/>
+        <line x1="43" y1="38" x2="60" y2="25" stroke="#222" stroke-width="5" stroke-linecap="round"/>
+        <!-- Legs -->
+        <line x1="32" y1="58" x2="26" y2="82" stroke="#222" stroke-width="5" stroke-linecap="round"/>
+        <line x1="38" y1="58" x2="44" y2="82" stroke="#222" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div style="background:#6a2060;color:#fff;padding:7px 14px;border-radius:20px;font-size:13px;font-weight:600">I'm the best!</div>
+    <div style="background:#7a9ab0;color:#333;padding:7px 14px;border-radius:16px;font-size:13px;font-weight:600;transform:rotate(3deg)">I'm right! You're wrong!</div>
+    <div style="background:#ddc3d8;color:#333;padding:7px 14px;border-radius:16px;font-size:14px;font-weight:500">You can have whatever you want!</div>
+    <div style="background:#7a9ab0;color:#333;padding:7px 14px;border-radius:16px;font-size:13px;font-weight:600;transform:rotate(-3deg)">Others owe me everythings!</div>
+    <div style="background:#b0bec5;color:#333;padding:7px 14px;border-radius:20px;font-size:13px;font-weight:600">It wasn't my fault, it's yours.</div>
+  </div>
+
+  <div class="band b-navy" style="padding:18px 16px">
+    <p style="color:#fff;font-size:15px;line-height:1.82">The inner entitlement voice makes us feel we are the center of the world and that others must meet our needs and expectations.</p>
   </div>
 </div>
 </div>
@@ -762,45 +1304,49 @@ body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
       </div>
     </div>
   </div>
-  <div id="vt-lpm" style="display:none">What is protection mechanism and why they are used? Protection mechanisms or armour are the strategies we develop — often in childhood — to protect ourselves from pain, shame, rejection and vulnerability. Connect Me To Me helps to be a responsible adult and to take our power back by: learning to be connected to ourselves, that leads to meaningful deeper connection with others. Learning to emotionally feed our inner child with love and compassion rather than expecting others to feed her or him. Recognising our inner negative narration back of our mind and releasing ourselves from its prison. Taking our power back and being our own source of love, support and security. The three main protection mechanisms are: Unworthiness and Shame, Codependency, and Numbing.</div>
+  <div id="vt-lpm" style="display:none">In early childhood, to feel secure, protected from being hurt and also to gain love and acceptance, different mechanisms have been developed at that age, which are being used in adulthood with same intention. Perfectionism, codependency, other pleasing, narcissism and blaming are examples of our copying mechanisms. We abandon ourselves when we seek love, acceptance, admiration, approval, praise from others. When we take care of others needs and wants more than ours. When others are responsible for our needs. When we feel worthy and good enough only while we obtain achievement. When we distract ourselves to not feel uncomfortable feelings and pain of loneliness. When we use same mechanism as when we were a little kid to gain love, acceptance and feel secure.</div>
 
-  <!-- Icon from Figma 973-0 -->
+  <!-- Shield icon -->
   <div class="ic">
-    <svg width="88" height="88" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M28 48s-22-12-22-26a12 12 0 0 1 22-6.75A12 12 0 0 1 50 22c0 14-22 26-22 26z" fill="#845460" opacity=".85"/>
-  <path d="M10 34 Q4 40 8 46 Q12 50 18 46" stroke="#C4929E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  <path d="M46 34 Q52 40 48 46 Q44 50 38 46" stroke="#C4929E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
+    <svg width="88" height="88" viewBox="0 0 56 56" fill="none">
+      <path d="M28 8 L46 16 L46 30 Q46 44 28 50 Q10 44 10 30 L10 16 Z" fill="#243A4E" stroke="#845460" stroke-width="2"/>
+      <path d="M20 28 L25 34 L36 22" stroke="#C4929E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
   </div>
 
   <div class="sec">
-    <!-- Improve Inner Connection content from 973-0 -->
+
+    <!-- Frame 1: Early childhood mechanisms -->
     <div class="band b-navy">
-      <p>Connect Me To Me helps to be a responsible adult and to take our power back by:</p>
-      <ul class="ckl" style="margin-top:10px">
-        <li><span class="ck">✓</span><span>Learn to be connected to ourselves, that leads to meaningful deeper connection with others.</span></li>
-        <li><span class="ck">✓</span><span>Learn to emotionally feed inner little us with love and compassion rather than expect others to feed her/him.</span></li>
-        <li><span class="ck">✓</span><span>Recognize our inner negative narration back of our mind and release ourselves from its prison.</span></li>
-        <li><span class="ck">✓</span><span>Take our power back and be our own source of love, support and security.</span></li>
+      <p style="color:#EAD3C8">In early childhood, to feel secure, protected from being hurt and also to gain love and acceptance different mechanisms have been developed at that age, which are being used in adulthood with same intention.</p>
+      <p style="margin-top:10px;color:#BDC7C9">Perfectionism, codependency, other pleasing, narcissism and blaming are example of our copying mechanisms.</p>
+    </div>
+
+    <!-- Frame 2: Self Abandonment -->
+    <div class="band" style="background:#2A1525;border:1px solid rgba(132,84,96,.35)">
+      <p style="font-size:17px;font-weight:600;color:#EAD3C8;margin-bottom:12px">Self Abandonment</p>
+      <p style="color:#BDC7C9;margin-bottom:10px">We abandon ourselves when:</p>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="display:flex;gap:8px;padding:7px 0;border-bottom:1px solid rgba(189,199,201,.08);color:#BDC7C9;font-size:14px;line-height:1.7"><span style="color:#5BA3A8;flex-shrink:0">*</span><span>we seek love, acceptance, admiration, approval, praise from others.</span></li>
+        <li style="display:flex;gap:8px;padding:7px 0;border-bottom:1px solid rgba(189,199,201,.08);color:#BDC7C9;font-size:14px;line-height:1.7"><span style="color:#5BA3A8;flex-shrink:0">*</span><span>we take care of others needs and wants more ours.</span></li>
+        <li style="display:flex;gap:8px;padding:7px 0;border-bottom:1px solid rgba(189,199,201,.08);color:#BDC7C9;font-size:14px;line-height:1.7"><span style="color:#5BA3A8;flex-shrink:0">*</span><span>others are responsible for our needs.</span></li>
+        <li style="display:flex;gap:8px;padding:7px 0;border-bottom:1px solid rgba(189,199,201,.08);color:#BDC7C9;font-size:14px;line-height:1.7"><span style="color:#5BA3A8;flex-shrink:0">*</span><span>we feel worthy and good enough ONLY while we obtain achievement.</span></li>
+        <li style="display:flex;gap:8px;padding:7px 0;border-bottom:1px solid rgba(189,199,201,.08);color:#BDC7C9;font-size:14px;line-height:1.7"><span style="color:#5BA3A8;flex-shrink:0">*</span><span>we distract ourselves to not feel uncomfortable feelings and pain of loneliness.</span></li>
+        <li style="display:flex;gap:8px;padding:7px 0;color:#BDC7C9;font-size:14px;line-height:1.7"><span style="color:#5BA3A8;flex-shrink:0">*</span><span>we use same mechanism as when we were a little kid to gain love, acceptance and feel secure.</span></li>
       </ul>
     </div>
 
     <div class="div"></div>
     <div class="slbl sr">Protection Mechanisms</div>
 
-    <!-- 1. Unworthiness / Shame -->
     <div class="rm" onclick="go('s-pm-unworthy')" style="margin-bottom:10px">
       <div class="rm-title">Unworthiness / Shame</div>
       <div class="rm-sub">Perfectionism · Inner Critic · Inner Victim · Inner Entitlement</div>
     </div>
-
-    <!-- 2. Codependency -->
     <div class="rm" onclick="go('s-pm-codep')" style="margin-bottom:10px">
       <div class="rm-title">Codependency</div>
       <div class="rm-sub">How codependency mechanism works</div>
     </div>
-
-    <!-- 3. Numbing -->
     <div class="rm" onclick="go('s-pm-numbing')" style="margin-bottom:10px">
       <div class="rm-title">Numbing Mechanism</div>
       <div class="rm-sub">What's your pain killer to avoid hearing the inner voice?</div>
@@ -1662,7 +2208,7 @@ function closeM(id){document.getElementById(id).classList.remove('on')}
 var synth=window.speechSynthesis;
 var playing=false,rate=1,ctx=null,pInt=null,t0=0,dur=0;
 var sIdx={};
-var ALL=['home','learn','lic','ler','lmf','liv','lpm','prac','picm','pic','psc','piv','pmf','pcb','pmu','pmc','pmn'];
+var ALL=['home','hic','learn','lic','ler','lmf','liv','lpm','prac','picm','pic','psc','piv','pmf','pcb','pmu','pmc','pmn','licc','licw','licv','licsc','mca','ivc','ivv','ive'];
 
 function bestVoice(){
   var vs=synth.getVoices();
